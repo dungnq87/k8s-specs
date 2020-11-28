@@ -4,6 +4,9 @@ server:
     annotations:
       ingress.kubernetes.io/ssl-redirect: "false"
       nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    hosts: 
+      - cent3.dung.local
+      - cent2.dung.local
   resources:
     limits:
       cpu: 100m
@@ -17,6 +20,9 @@ alertmanager:
     annotations:
       ingress.kubernetes.io/ssl-redirect: "false"
       nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    hosts: 
+      - cent2.dung.local
+      - cent3.dung.local
   resources:
     limits:
       cpu: 10m
